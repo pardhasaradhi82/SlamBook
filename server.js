@@ -21,7 +21,8 @@ const slamSchema = mongoose.Schema({
     worstHabit : String,
     Crush : String,
     favouriteFood : String,
-    nickName : String
+    nickName : String,
+    Name : String
   });
   
   
@@ -53,7 +54,8 @@ app.post('/', function(req, res){
         worstHabit : req.body.q7,
         Crush : req.body.q8,
         favouriteFood : req.body.q9,
-        nickName : req.body.q10
+        nickName : req.body.q10,
+        Name : req.body.q11
     })
 
     slamData.save();
