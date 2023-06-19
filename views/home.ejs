@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Slam Book - Friends </title>
+
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+
+        input {
+            border-radius: 5px;
+            width: 100%;
+            height: 20px;
+        }
+
+        legend {
+            background: white;
+            font-family: cursive;
+            padding: 5px 10px;
+        }
+
+        label {
+            margin: 10px 0;
+            font-family: cursive;
+        }
+
+        fieldset {
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .sub-btn {
+            margin: 0 auto;
+            padding: 5px 0;
+            height: 30px;
+            border-radius: 10px;
+            background: blue;
+            color: white;
+            font-size: 15px;
+            transition: all;
+        }
+
+        .sub-btn:hover {
+            background-color: tomato;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Slam Book</legend>
+                <label for="q1">First thing you notice in me :</label><br>
+                <input type="text" name="q1" class="form-control" required><br><br>
+                <label for="q2">Quality you like the most in yourself :</label><br>
+                <input type="text" name="q2" class="form-control" required><br><br>
+                <label for="q3">Your best friend :</label><br>
+                <input type="text" name="q3" class="form-control" required><br><br>
+                <label for="q4">Most important person in your life :</label><br>
+                <input type="text" name="q4" class="form-control" required><br><br>
+                <label for="q5">My contact name in your phone :</label><br>
+                <input type="text" name="q5" class="form-control" required><br><br>
+                <label for="q6">Words about me :</label><br>
+                <input type="text" name="q6" class="form-control" required><br><br>
+                <label for="q7">Your worst habit :</label><br>
+                <input type="text" name="q7" class="form-control" required><br><br>
+                <label for="q8">Your crush :</label><br>
+                <input type="text" name="q8" class="form-control" required><br><br>
+                <label for="q9">Your favourite food item :</label><br>
+                <input type="text" name="q9" class="form-control" required><br><br>
+                <label for="q10">Your nickname :</label><br>
+                <input type="text" name="q10" class="form-control" required><br><br>
+
+                <p><b>Note : Send Everyone , Reply must.</b></p>
+
+            </fieldset>
+            <input class="sub-btn" type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+
+</html>
