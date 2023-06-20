@@ -60,7 +60,7 @@ app.post('/', function(req, res){
 
     slamData.save();
 
-    res.redirect("/");
+    res.render("result");
 
 })
 
