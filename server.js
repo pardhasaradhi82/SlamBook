@@ -11,6 +11,7 @@ app.set('view engine', 'ejs')
 
 mongoose.set('strictQuery', false);
 
+var resultOfSlam = "";
 const slamSchema = mongoose.Schema({
     firstThingNoticeInMe : String,
     qualityInYourself : String,
@@ -39,7 +40,7 @@ const slamSchema = mongoose.Schema({
   };
 
 app.get('/', function(req, res){
-    res.render('home');
+    res.render('home', {result : resultOfSlam});
 })
 
 app.post('/', function(req, res){
@@ -59,7 +60,7 @@ app.post('/', function(req, res){
     })
 
     slamData.save();
-
+    resultOfSlam = "Slam details are submitted successfully";
    res.redirect("/");
 
 })
