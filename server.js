@@ -57,9 +57,16 @@ app.post('/', function(req, res){
         Name : req.body.q11
     })
 
-    slamData.save();
-
-   res.redirect("/");
+    Slam.create(slamData)
+    .then((result) => {
+        res.render("result");
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+    .finally(() => {
+        mongoose.disconnect();
+    })
 
 })
 
