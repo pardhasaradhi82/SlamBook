@@ -60,8 +60,12 @@ app.post('/', function(req, res){
 
     slamData.save();
 
-   // res.render("result");
+   res.redirect("/submit");
 
+})
+
+app.get('/submit', function(req, res) {
+    res.render("result");
 })
 
 connectDB().then(() => {
