@@ -60,13 +60,10 @@ app.post('/', function(req, res){
 
     slamData.save();
 
-   res.redirect("/submit");
+   res.redirect("/");
 
 })
 
-app.get('/submit', function(req, res) {
-    res.render("result");
-})
 
 connectDB().then(() => {
   app.listen(process.env.PORT, () => {
